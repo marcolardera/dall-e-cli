@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dall-e-cli"
+description = "A command line tool for interacting with DALL-E models"
+version = "0.1"
+requires-python = ">= 3.10"
+readme = "README.md"
+
+authors = [
+  {name = "Marco Lardera", email = "larderamarco@hotmail.com"}
+  ]
+
+dependencies = [
+    "click",
+    "requests"
+    ]
+
+[project.scripts]
+dall-e-cli = "main:main"
